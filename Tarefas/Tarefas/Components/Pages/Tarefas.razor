@@ -1,0 +1,43 @@
+﻿﻿@page "/Tarefas"
+
+<h3>Tarefas</h3>
+
+<h5>Tabela de tarefas</h5>
+
+<table>
+    <thead>
+    <tr>
+        <th>Tarefa</th>
+        <th>Descrição</th>
+        <th>Data de entrega</th>
+        <th>Estado</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Criar uma newsletter</td>
+        <td>Garantir uma boa UX/UI</td>
+        <td>05/06/2026</td>
+        <td><input type="checkbox" @bind="isChecked" />
+        </td>
+    </tr>
+    <tr>
+        <td>Criar uma página de análise do mercado crypto</td>
+        <td>Charts atualizadas ao segundo e análise com IA</td>
+        <td>05/06/2026</td>
+        <td><input type="checkbox" @bind="isChecked" />
+        </td>
+    </tr>
+    <tr>
+        <td>Criar uma página de pagamento Premium</td>
+        <td>Oferecer pacotes pagos com funcionalidades extra</td>
+        <td>05/06/2026</td>
+        <td><input type="checkbox" @bind="isChecked" />
+        </td>
+    </tr> 
+    </tbody>
+</table>
+
+@code {
+    private bool isChecked = false;
+}
